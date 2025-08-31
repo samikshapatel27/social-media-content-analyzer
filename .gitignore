@@ -1,0 +1,61 @@
+# Ignore node_modules in ANY directory
+**/node_modules/
+/.pnp
+.pnp.js
+
+# Npm and Yarn debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Ignore ALL environment variable files for safety
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Frontend production build
+frontend/build/
+*.tgz # Output of 'npm pack'
+
+# Runtime data (pids, locks, seeds)
+pids
+*.pid
+*.seed
+*.pid.lock
+*.tgz
+
+# Logs
+logs
+*.log
+
+# Coverage Reports
+coverage/
+*.lcov
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.eslintcache
+
+# User-uploaded files
+uploads/
+*.tmp
+*.temp
+
+# Next.js (harmless to include)
+.next
+
+# Optional REPL history
+.node_repl_history
