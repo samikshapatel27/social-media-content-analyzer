@@ -72,8 +72,13 @@ social-media-content-analyzer/
 ### Backend Setup
 
 ```bash
+# Navigate to backend directory
 cd backend
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm start
 ```
 
@@ -84,8 +89,13 @@ Server runs on http://localhost:5000
 Open a new terminal window in the project root directory
 
 ```bash
+# Navigate to frontend directory
 cd frontend
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm start
 ```
 
