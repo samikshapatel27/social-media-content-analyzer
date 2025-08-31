@@ -1,0 +1,147 @@
+:root {
+  /* Glassmorphism design variables */
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Drag and drop zone styling */
+.drop-zone {
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Hover and active states for drop zone */
+.drop-zone:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.drop-zone.dragging {
+  border-color: rgba(102, 126, 234, 0.8);
+  background: rgba(102, 126, 234, 0.1);
+  transform: scale(1.02);
+}
+
+/* Disabled state styling */
+.drop-zone.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.drop-zone.disabled:hover {
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Upload icon and text styles */
+.upload-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  opacity: 0.9;
+}
+
+.drop-zone p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.support-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.95rem !important;
+  font-weight: 400 !important;
+}
+
+.or-text {
+  margin: 1.5rem 0;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Browse button styles */
+.browse-btn {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.browse-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.browse-btn:disabled {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Selected file name display */
+.file-name {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.3s ease;
+}
+
+.file-name span {
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-top: 0.5rem;
+  word-break: break-word;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .drop-zone {
+    padding: 2rem 1.5rem;
+  }
+  
+  .upload-icon {
+    font-size: 2.5rem;
+  }
+  
+  .browse-btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}

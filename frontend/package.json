@@ -1,0 +1,65 @@
+{
+  "name": "social-media-analyzer-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for social media content analyzer with PDF and image text extraction",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "build:prod": "npm run build",
+    "serve:build": "serve -s build",
+    "typecheck": "react-scripts build"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^16.3.0",
+    "serve": "^14.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "Samiksha Patel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samikshapatel27/social-media-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samikshapatel27/social-media-analyzer/issues"
+  },
+  "keywords": [
+    "react",
+    "social-media",
+    "content-analysis",
+    "frontend",
+    "pdf-analysis",
+    "image-ocr",
+    "engagement-analyzer"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
